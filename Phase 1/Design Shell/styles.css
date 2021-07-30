@@ -1,0 +1,22 @@
+header, main, footer{
+    border: solid 5px black;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    font-family: monospace;
+    color: darkgray;
+
+
+}
+
+div{
+    text-align:center;
+    font-style: italic;
+}
