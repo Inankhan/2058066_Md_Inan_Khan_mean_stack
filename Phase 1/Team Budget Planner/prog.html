@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Managers' Portal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="center">
+    Add New Budget
+    <form class="center noBorder centerText">
+        <label for="ClientName">Client Name:</label>
+        <br>
+        <input type="text" name="ClientName" id="ClientName" required="required">
+        <br>
+        <br>
+        <label for="ProjectName">Project Name:</label>
+        <br>
+        <input type="text" name="ProjectName" id="ProjectName" required="required">
+        <br>
+        <br>
+        <label for="budget">Budget:</label>
+        <br>
+        <input type="text" name="budget" id="budget" required="required">
+        <br>
+        <br>
+        <input type="button" name="add" value="add" onclick="addNewBudget()">
+        <input type="reset" name="clear" value="clear">
+    </form>
+    
+    
+    <a href="index.html">Back</a>
+
+    </div>
+
+</body>
+</html>
