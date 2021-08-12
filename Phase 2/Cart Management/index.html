@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src = "app.js"></script>
+</head>
+<body onload=updateCartSize()>
+    <div class="section">
+        <h1 class="title">Shopping Cart</h1>
+    </div>
+
+    <div class="section is-flex is-justify-content-space-between	">
+        <h1 class="subtitle ">Cart Size: <span id="cart_size"></span></h1>
+        <a href="checkout.html" class="button is-danger ">Checkout</a></div>
+    </div>
+
+    <div class="section is-flex is-justify-content-space-evenly" id="all_items">
+
+        <div class="card">
+            <div class="card-image" id="inan">
+                <figure class="image ">
+                  <img src="https://media.gettyimages.com/vectors/laptop-isolated-on-white-background-vector-id1095608518?k=6&m=1095608518&s=612x612&w=0&h=9uNMjd-JVWZM3im2UDHFsYHE4lbMm-hHGodniOvbfaw=" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="card-content is-center">
+              <div class="content is-center">
+                Computer
+                <br>
+                Price: $1,0000
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-info" onClick=addComputer()>Add</button>
+            </footer>
+          </div>
+
+          <div class="card">
+            <div class="card-image" id="inan">
+                <figure class="image">
+                  <img src="https://media.gettyimages.com/photos/bicycle-with-full-clipping-path-picture-id171586627?k=6&m=171586627&s=612x612&w=0&h=2G61Pf3PtHXNas0ISNFHuqYKR3T0pCZ1wlv_pn-_Gy0=" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="card-content is-center">
+              <div class="content is-center">
+                Bicycle
+                <br>
+                Price: $200
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-info" onClick=addBicycle()>Add</button>
+            </footer>
+          </div>
+
+          <div class="card">
+            <div class="card-image" id="inan">
+                <figure class="image">
+                  <img src="https://media.gettyimages.com/photos/side-of-silver-modern-compact-car-on-a-white-background-picture-id155376760?k=6&m=155376760&s=612x612&w=0&h=KEk-UZy9nD1nAenYxQcM26I6s9Df-k5yuhyvJRo9Etg=" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="card-content is-center">
+              <div class="content is-center">
+                Car
+                <br>
+                Price: $10,000
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-info" onClick=addCar()>Add</button>
+            </footer>
+          </div>
+          
+          <div class="card">
+            <div class="card-image" id="inan">
+                <figure class="image">
+                  <img src="https://media.gettyimages.com/photos/television-set-against-white-background-picture-id1191058022?k=6&m=1191058022&s=612x612&w=0&h=fvTGOYLRpQ1U3NhnLrPKGMfzyaSFZSwhDQRcya2M5bM=" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="card-content is-center">
+              <div class="content is-center">
+                TV
+                <br>
+                Price: $500
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-info" onClick=addTV()>Add</button>
+            </footer>
+          </div>
+
+    </div>
+    
+</body>
+</html>
