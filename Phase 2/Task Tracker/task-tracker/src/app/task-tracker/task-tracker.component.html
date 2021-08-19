@@ -1,0 +1,59 @@
+<div><h1>Task Tracker</h1></div>
+
+<div >
+<form #todoForm="ngForm" (ngSubmit)="createTask(todoForm)">
+
+    <mat-form-field>
+        <mat-label>ID</mat-label>
+        <input matInput type="text" name="id" ngModel/>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput type="text" name="name" ngModel/>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Task</mat-label>
+        <textarea matInput name="task" ngModel></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Dead Line</mat-label>
+        <input matInput type="date" name="deadLine" ngModel/>
+    </mat-form-field>
+
+    <br/>
+        <button type="submit" mat-stroked-button color="accent" style="margin-right:100px;">Add Task</button>
+        <button type="reset" mat-stroked-button color="primary">Reset</button>
+
+</form>
+
+</div>
+
+<div>
+    <br>
+    <hr>
+    <table class="center centerText">
+        <tr>
+            <th>Emp ID</th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Deadline</th>
+        </tr>
+
+        <tr *ngFor = "let task of tasks"> 
+            <td>{{task.id}}</td>
+            <td>{{task.name}}</td>
+            <td>{{task.task}}</td>
+            <td>{{task.deadLine}}</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    
+    
+</div>
+
+
