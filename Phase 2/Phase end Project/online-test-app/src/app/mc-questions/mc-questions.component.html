@@ -1,0 +1,40 @@
+<div>
+    <div class="center centerText">
+        <br>
+        <h1>Online Test Application</h1>
+        <br>
+        <button (click)="startTest()" mat-raised-button color="primary">Start Test</button>
+    </div>
+
+    <div *ngIf="form" class="margin-left">
+        <form #examRef="ngForm" (ngSubmit)="checkAnswers(examRef)">
+            <div *ngFor="let question of questions">
+                
+                <p>{{question.question}}</p>
+                <input type="radio" name={{question.question}} value={{question.ans1}} ngModel required/>{{question.ans1}}<br/>
+                <input type="radio" name={{question.question}} value={{question.ans2}} ngModel required/>{{question.ans2}}<br/>
+                <input type="radio" name={{question.question}} value={{question.ans3}} ngModel required/>{{question.ans3}}<br/>
+                <input type="radio" name={{question.question}} value={{question.ans4}} ngModel required/>{{question.ans4}}<br/>
+                <br>
+            </div> 
+
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+            <button type="reset" mat-button color="link" >Reset</button>
+            <br>
+            <br>
+            <br>
+     
+
+        </form>
+
+        <div *ngIf="result">
+            <h2>Result: {{counter}}/10</h2>
+            <br>
+            <h2>{{msg}}</h2>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    
+</div>

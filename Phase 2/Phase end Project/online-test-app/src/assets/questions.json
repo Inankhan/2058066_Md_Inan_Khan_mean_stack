@@ -1,0 +1,66 @@
+[
+    {"question":"1) Which language is used to create the front-end structure of a webpage?",
+     "ans1":"Java",  
+     "ans2":"HTML", 
+     "ans3":"CSS", 
+     "ans4":"Java-script"
+    },
+    {"question":"2) Which language is used for styling and designing a webpage?",
+        "ans1":"SQL",  
+        "ans2":"HTML", 
+        "ans3":"CSS", 
+        "ans4":"Python"
+       },
+       {"question":"3) What is the tag used in HTML to generate hyperlinks?",
+        "ans1":"<a>",  
+        "ans2":"<body>", 
+        "ans3":"<span>", 
+        "ans4":"<div>"
+       },
+       {"question":"4) Which one of these is a CSS library?",
+        "ans1":"MongoDB",  
+        "ans2":"Express", 
+        "ans3":"Angular", 
+        "ans4":"Bootstrap"
+       },
+       {"question":"5) What goes inside the HTML <p> tag?",
+        "ans1":"Strings",  
+        "ans2":"Numbers", 
+        "ans3":"A large amount of text", 
+        "ans4":"Javascript syntax"
+       },
+       {"question":"6) What does console.log do?",
+        "ans1":"It logs input/data in the user console",  
+        "ans2":"It prints text to the UI", 
+        "ans3":"It does/returns nothing", 
+        "ans4":"It calls a built in function"
+       },
+       
+       {"question":"7) What is angular?",
+        "ans1":"It is a Web Framework",  
+        "ans2":"It is a back-end language", 
+        "ans3":"It is a front-end language", 
+        "ans4":"It is a css library"
+       }
+       ,
+       {"question":"8) What shape is the earth?",
+        "ans1":"Square",  
+        "ans2":"Rectangle", 
+        "ans3":"Sphere", 
+        "ans4":"Cylinder"
+       }
+       ,
+       {"question":"9) What is 25 times 25?",
+        "ans1":"1250",  
+        "ans2":"625", 
+        "ans3":"500", 
+        "ans4":"250"
+       }
+       ,
+       {"question":"10) How many questions were on this quiz?",
+        "ans1":"10",  
+        "ans2":"5", 
+        "ans3":"9", 
+        "ans4":"15"
+       }
+]
